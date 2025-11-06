@@ -1,14 +1,23 @@
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
+import Skills from "@/components/sections/Skills";
+import Education from "@/components/sections/Education";
+import Projects from "@/components/sections/Projects";
+import Certificates from "@/components/sections/Certificates";
+import Contact from "@/components/sections/Contact";
+
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800">
-      <h1 className="text-4xl font-bold mb-4">Hi, I’m Usama Bashir 👋</h1>
-      <p className="text-lg">A passionate web developer building modern web experiences.</p>
-      <a
-        href="mailto:yourname@email.com"
-        className="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-      >
-        Contact Me
-      </a>
-    </main>
+    <>
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Education />
+      <Projects />
+      <Certificates />
+      <Contact />
+    </>
   );
 }
